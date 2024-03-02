@@ -1,0 +1,24 @@
+/*---------- PC ---------- */
+@media (max-height: 900px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1087px) {
+  .header {
+    &__actions {
+      display: none;
+    }
+  }
+
+  .item-services {
+    &__image img {
+      max-width: 100%;
+    }
+  }
+
+  .item-footer:first-child {
+    display: none;
+  }
+}

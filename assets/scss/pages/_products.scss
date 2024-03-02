@@ -1,0 +1,51 @@
+.products {
+  &__container {
+  }
+
+  &__header {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__body {
+    margin: 80px 0px 0px 0px;
+  }
+}
+
+.products-name {
+  &__title {
+    color: var(--color-black);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  &__items {
+    margin: 30px 0px 0px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+    gap: 40px;
+  }
+
+  &__item {
+    overflow: hidden;
+    cursor: pointer;
+
+    & img {
+      max-width: 100%;
+      width: 300px;
+      max-height: 400px;
+
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

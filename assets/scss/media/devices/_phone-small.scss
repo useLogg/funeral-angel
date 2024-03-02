@@ -1,0 +1,195 @@
+/*---------- Phone Small ---------- */
+@media (max-width: 479.98px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .header {
+    &__actions {
+      display: none;
+    }
+
+    &__call {
+      font-size: 30px;
+    }
+
+    &__call-text {
+      font-size: 22px;
+    }
+  }
+
+  .menu {
+    &__link-actions {
+      margin: 25px 0px 0px 0px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .hero {
+    &__subtitle {
+      margin: 15px 0px 30px 0px;
+
+      max-width: 300px;
+    }
+
+    &__buttons {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .services {
+    padding: 0px 0px 40px 0px;
+
+    &__items {
+      gap: 40px;
+    }
+  }
+
+  .item-services {
+    &__image img {
+      max-width: none;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+
+      border-radius: 0px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .prices {
+    &__items {
+      gap: 40px;
+    }
+  }
+
+  .item-prices {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+
+    &__body {
+      width: 320px;
+    }
+  }
+
+  .information {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .item-organization {
+    gap: 15px;
+
+    &__number img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .item-organization-footer {
+    &__text {
+      font-size: 16px;
+    }
+
+    &__number img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .item-footer {
+    &__call {
+      font-size: 30px;
+    }
+
+    &__item {
+      font-size: 20px;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+  }
+
+  .offers {
+    &__item {
+      width: 300px;
+    }
+  }
+
+  .products {
+    &__body {
+      margin: 40px 0px 0px 0px;
+    }
+  }
+
+  .products-name {
+    &__items {
+      grid-template-columns: repeat(1, minmax(100px, 300px));
+    }
+
+    &__item {
+      overflow: visible;
+
+      & img {
+        max-width: none;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+      }
+    }
+  }
+
+  .transport {
+    &__items {
+      grid-template-columns: repeat(1, minmax(100px, 300px));
+    }
+
+    &__item {
+      overflow: visible;
+
+      & img {
+        max-width: none;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+      }
+    }
+  }
+
+  .contacts {
+    &__image img {
+      max-width: none;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      border-radius: 0px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

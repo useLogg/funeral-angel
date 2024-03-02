@@ -1,0 +1,49 @@
+/*---------- Offers ---------- */
+.offers {
+  padding: 80px 0px 50px 0px;
+
+  background: var(--color-gray);
+
+  &__container {
+  }
+
+  &__body {
+  }
+
+  &__items {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+.item-offers {
+  &__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__title {
+    color: var(--color-black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  &__text {
+    color: var(--color-black);
+    font-size: 18px;
+    line-height: 140%;
+  }
+}

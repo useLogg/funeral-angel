@@ -1,0 +1,289 @@
+/*---------- Tablet ---------- */
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 900px;
+  }
+
+  .section-header {
+    padding: 80px 0px 0px 0px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .header {
+    &__logo {
+      order: 1;
+
+      position: relative;
+      z-index: 10;
+    }
+
+    &__menu {
+      order: 3;
+    }
+
+    &__actions {
+      margin: 0px 40px 0px auto;
+
+      order: 2;
+      display: flex;
+
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .menu {
+    &__icon {
+      display: block;
+
+      position: relative;
+      width: 40px;
+      height: 25px;
+      z-index: 5;
+      cursor: pointer;
+
+      &._active {
+        height: 5px;
+      }
+
+      & span,
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+
+        background: var(--color-white);
+        border-radius: 10px;
+
+        transition: all 0.3s ease;
+      }
+
+      & span {
+        opacity: 1;
+
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &._active span {
+        opacity: 0;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &._active::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      &._active::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &__body {
+      padding: 170px 0px 0px 0px;
+
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+
+      background: var(--color-green);
+      transition: right 0.3s ease;
+
+      &._active {
+        right: 0;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__link {
+      font-size: 34px;
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 68px;
+    }
+
+    &__subtitle {
+      margin: 15px 0px 35px 0px;
+
+      max-width: 572px;
+      font-size: 18px;
+    }
+
+    &__buttons {
+      gap: 30px;
+    }
+  }
+
+  .services {
+    padding: 0px 0px 60px 0px;
+
+    &__items {
+      gap: 40px;
+    }
+
+    &__body {
+      margin: 70px 0px 0px 0px;
+    }
+  }
+
+  .item-services {
+    gap: 40px;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__text {
+      margin: 15px 0px;
+      font-size: 15px;
+    }
+  }
+
+  .prices {
+    &__body {
+      margin: 70px 0px 0px 0px;
+    }
+
+    &__items {
+      gap: 40px;
+    }
+  }
+
+  .item-prices {
+    &__body {
+      height: 450px;
+    }
+
+    &__title {
+      margin: 0px 0px 10px 0px;
+    }
+
+    &__footer {
+      margin: 15px 0px 0px 0px;
+    }
+
+    &__price {
+      font-size: 30px;
+    }
+  }
+
+  .information {
+    padding: 60px 0px;
+    margin: 80px 0px 0px 0px;
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__body {
+      margin: 50px 0px 0px 0px;
+    }
+
+    &__items {
+      gap: 40px;
+    }
+  }
+
+  .item-information {
+    &__text {
+      font-size: 22px;
+    }
+  }
+
+  .organization {
+    &__body {
+      margin: 70px 0px 0px 0px;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+
+  .footer {
+    padding: 80px 0px;
+  }
+
+  .offers {
+    padding: 70px 0px 50px 0px;
+
+    &__items {
+      display: grid;
+      place-items: center;
+      justify-content: center;
+      gap: 40px;
+      grid-template-columns: repeat(2, 300px);
+    }
+  }
+
+  .item-offers {
+    &__title {
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+
+  .products {
+    &__body {
+      margin: 50px 0px 0px 0px;
+    }
+  }
+
+  .transport {
+    &__body {
+      margin: 60px 0px 0px 0px;
+    }
+  }
+
+  .contacts {
+    &__body {
+      margin: 50px 0px 0px 0px;
+
+      flex-direction: column;
+    }
+
+    &__image {
+      text-align: center;
+      & img {
+        width: auto;
+      }
+    }
+
+    &__map {
+      margin: 60px 0px 0px 0px;
+    }
+  }
+
+  .reparations {
+    &__body {
+      margin: 60px 0px 0px 0px;
+
+      flex-direction: column;
+    }
+  }
+}

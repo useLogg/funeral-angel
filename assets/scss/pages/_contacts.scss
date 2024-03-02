@@ -1,0 +1,46 @@
+.contacts {
+  &__container {
+  }
+
+  &__header {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__body {
+    margin: 80px 0px 0px 0px;
+
+    display: flex;
+    gap: 40px;
+  }
+
+  &__image {
+    & img {
+      width: 500px;
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__text {
+    color: var(--color-black);
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  &__map {
+    margin: 70px 0px 0px 0px;
+
+    & iframe {
+      width: 100%;
+    }
+  }
+}

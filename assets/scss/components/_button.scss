@@ -1,0 +1,30 @@
+.button {
+  padding: 16px 30px;
+
+  display: inline-block;
+
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+
+  border-radius: 4px;
+  background: var(--color-green);
+  border: 3px solid transparent;
+
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #248388;
+  }
+}
+
+.button-bordered {
+  background: transparent;
+  border: 3px solid var(--color-green);
+
+  &:hover {
+    background: #248388;
+    border: 3px solid #248388;
+  }
+}

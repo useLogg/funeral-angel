@@ -1,0 +1,21 @@
+/*---------- Basic Styles ---------- */
+@import 'base/_reset.scss';
+@import 'base/_global.scss';
+@import 'base/_variables.scss';
+
+/*---------- Components ---------- */
+@import 'components/_header.scss';
+@import 'components/_button.scss';
+@import 'components/_section-header.scss';
+@import 'components/_footer.scss';
+@import 'components/_call-widget.scss';
+
+/*---------- Pages ---------- */
+@import 'pages/_index.scss';
+@import 'pages/_services.scss';
+@import 'pages/_products.scss';
+@import 'pages/_transport.scss';
+@import 'pages/_contacts.scss';
+
+/*---------- Media ---------- */
+@import 'media/_media.scss';
